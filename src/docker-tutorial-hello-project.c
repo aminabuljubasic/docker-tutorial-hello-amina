@@ -15,6 +15,7 @@ int main(int argc, char **argv) {
       char directory_help[40];
       strcpy(directory_help,directory);
       filename_in = strcat(directory_help,"/read.txt");
+      printf("Filename in is : %s \n", filename_in);
       demo_read = fopen(filename_in,"r+");
       if(!demo_read){
          printf("You forgot the read.txt file in the bindmount directory, quitting. \n");
