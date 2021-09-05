@@ -18,10 +18,11 @@ int main(int argc, char **argv) {
       printf("Filename in is : %s \n", filename_in);
       demo_read = fopen(filename_in,"r+");
       if(!demo_read){
+	      printf("UDJEM U IF \n");
          printf("You forgot the read.txt file in the bindmount directory, quitting. \n");
          exit(1);
       }
-      
+      printf("POSLIJE IF-A \n");
       char directory_help2[40];
       strcpy(directory_help2,directory);
       filename_out = strcat(directory_help,"/write.txt");
