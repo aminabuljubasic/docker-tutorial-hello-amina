@@ -27,9 +27,9 @@ int main(int argc, char **argv) {
       char c;
       while ((c = getc(demo_read)) != EOF){
            putchar(c);
-           fprintf(demo_write, "%c ",c);
+           fprintf(demo_write, "%c",c);
       }
-      fprintf(demo_write, "\n %s  ","Hello world");
+      fprintf(demo_write, "\n %s  ","Hello world from the final program! \n");
       printf("Hello world from the final program!  Here were the arguments! \n");
     
       for (int i = 2; i < argc; i++){
