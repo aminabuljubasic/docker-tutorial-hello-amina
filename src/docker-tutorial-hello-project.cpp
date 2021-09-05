@@ -20,9 +20,9 @@ int main(int argc, char **argv) {
 	if (argc >= 2){
 			directory = argv[1];
 			cout << "Directory is : " << directory << endl;
-
+			
 			filename_in = directory + "/read.txt";
-
+			cout<<filename_in<<endl;
 			in.open(filename_in.c_str());
 
 			if (!in.good()){
@@ -32,6 +32,7 @@ int main(int argc, char **argv) {
 
 
 			filename_out = directory + "/write.txt";
+			cout<<filename_out<<endl;
 			out.open(filename_out.c_str());
 
 
