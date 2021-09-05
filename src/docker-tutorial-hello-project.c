@@ -25,7 +25,7 @@ int main(int argc, char **argv) {
       printf("POSLIJE IF-A \n");
       char directory_help2[40];
       strcpy(directory_help2,directory);
-      filename_out = strcat(directory_help,"/write.txt");
+      filename_out = strcat(directory_help2,"/write.txt");
       demo_write = fopen(filename_out,"w+");
       char c;
       while ((c = getc(demo_read)) != EOF){
